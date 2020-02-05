@@ -51,7 +51,7 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
 autoload -U compinit
 
 plugins=(
-	docker
+	docker history
 )
 
 for plugin ($plugins); do
