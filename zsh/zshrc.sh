@@ -32,15 +32,8 @@ source ~/dotfiles/zsh/plugins/fixls.zsh
 		done;
 	}
 
- 	# Custom cd
- 	c() {
- 		cd $1;
- 		ls;
- 	}
- 	alias cd="c"
-
-# For vim mappings: 
-	stty -ixon
+# Custom cd
+chpwd() ls
 
 # Completions
 # These are all the plugin options available: https://github.com/robbyrussell/oh-my-zsh/tree/291e96dcd034750fbe7473482508c08833b168e3/plugins
@@ -84,3 +77,5 @@ fi
 
 source ~/dotfiles/zsh/prompt.sh
 export PATH=$PATH:$HOME/dotfiles/utils
+
+source ~/dotfiles/zsh/lockbook.sh
